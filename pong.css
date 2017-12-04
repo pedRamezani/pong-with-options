@@ -1,0 +1,75 @@
+body {
+    overflow-x: hidden;
+    margin:0;
+		padding:0;
+    background-color: black;
+		color:white;
+		text-indent:0px;
+		letter-spacing: 1px;
+		word-spacing: 3px;
+		font-family:Arial,Helvetica Neue,Helvetica,sans-serif;
+		font-size: 18px;
+    box-sizing: border-box;
+}
+
+button {
+	padding:10px;
+	border-radius:5px;
+  margin-left:50%;
+  margin-top: 20px;
+	transform: translate(-50%,0);
+	font-weight:bold;
+	background-color:magenta;
+	border: none;
+	box-shadow: 0px 5px #ccc;
+}
+
+button:active {background-color: magenta; box-shadow: 0px 2px #aaa; transform: translate(-50%,3px);}
+
+h1{ display:block;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: 0px 0px 10px black;
+		text-shadow: -1px 0px black, 1px 0px black, 0px 1px black, 0px -1px black;
+    width: 150px;
+		border:3px solid #212121;
+		padding: 5px 0px 5px 10px;
+		margin:0px;
+		font-size: 20px;
+		font-variant: small-caps;
+		font-weight: 500;
+		line-height: 26.4px;
+		position:fixed;
+		right:0px;
+		top:3%;
+		z-index:10;
+		background-color: magenta;
+    transition: all 1s;
+}
+
+h1:hover {
+  color: magenta;
+  background-color:black;
+  right:10px;
+  border: 3px solid magenta;
+}
+
+canvas {
+  border:3px solid #888;
+  border-radius: 2%;
+  padding:0;
+  margin-top: 50px;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+}
+
+fieldset {
+  margin-left: 50%;
+  transform: translate(-50%,0);
+  width: 800px;
+}
+
+.score {text-align: center;}
+
+@media screen and (max-width: 520px) {
+  h1 {display: none;}
+}

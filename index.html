@@ -1,0 +1,26 @@
+<html>
+ <head>
+  <title>Pong</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="PONG">
+  <meta name="keywords" content="JavaScript Pong Game">
+  <meta name="author" content="pedRamezani">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="pong.css" />
+ </head>
+ <body>
+   <h1>PONG</h1>
+   <div>
+   <canvas id="cbox" width="800" height="600" ></canvas>
+   <fieldset>
+     <legend>OPTIONEN</legend>
+     <input id="notrail" type="checkbox" name="notrail" onchange="optionchange()" checked>Zeige keine Spur an</input><br/>
+     <input id="rotate" type="checkbox" name="rotate" onchange="optionchange()">Rotationmode</input><br/>
+     <input id="glitch" type="checkbox" name="glitch" onchange="optionchange()">Glitchmode</input><br/>
+     <input id="twoplayer" type="checkbox" name="twoplayer" onchange="optionchange()">2-Spieler-Modus</input>
+   </fieldset>
+   </div>
+    <button onclick="location.href='https://github.com/pedRamezani/snake-with-powerups';" value="Go to Github">GITHUB-CODE</button>
+   <script src="pong.js"></script>
+ </body>
+</html>
