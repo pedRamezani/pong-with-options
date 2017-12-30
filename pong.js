@@ -7,7 +7,7 @@ paddlewidth: 5,
 notrail: true,
 rotate: false,
 glitch: false,
-winningscore: 500,
+winningscore: 10,
 uicolor: 'white',
 ballcolor: 'red',
 twoplayer: false
@@ -89,12 +89,12 @@ window.onload = function() {
       }
       if (evt.keyCode == 38) {
         evt.preventDefault();
-        comy -= 120;
+        comy -= 12;
         if (comy < 5) {comy = 5;}
       }
       else if (evt.keyCode == 40) {
         evt.preventDefault();
-        comy += 120;
+        comy += 12;
         if (comy > canvas.height - options.comheight -5) {comy = canvas.height - options.comheight -5;}
         return false;
       }
